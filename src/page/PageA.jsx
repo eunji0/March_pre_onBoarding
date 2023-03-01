@@ -1,11 +1,11 @@
 import React from 'react'
 
-function main() {
+function PageA() {
   return (
     <div>
-      main
+      pageA
     </div>
   )
 }
 
-export default main
+export default PageA

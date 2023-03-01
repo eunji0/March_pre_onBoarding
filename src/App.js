@@ -1,21 +1,24 @@
 import React from "react";
-import Main from './page/Main';
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./component/Header";
+import PageA from "./page/PageA";
+import PageB from "./page/PageB";
+import PageC from "./page/PageC";
 
 function App() {
   return (
     <div className="App">
+      메ㅔ
      <Main/>
-     {/* <BrowserRouter>
-      <Header />
+     <BrowserRouter>
+      {/* <Header /> */}
       <Routes>
-         <Route path="/" element={<Content/>} />
-         <Route path="/signup" element={<Signup/>}/>
-         <Route path="login" element={<Login/>}/>
-         <Route path="/new" element={<New/>}/>
+         <Route path="/pageA" element={<PageA/>} />
+         {/* <Route path="/pageB" element={<PageB/>} />
+         <Route path="/pageC" element={<PageC/>} /> */}
       </Routes>
       <Footer/>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </div>
   );
 }
