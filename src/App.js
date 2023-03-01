@@ -1,24 +1,23 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./component/Header";
-import TopHeader from "./component/TopHeader";
 import PageA from "./page/PageA";
 import PageB from "./page/PageB";
 import PageC from "./page/PageC";
+import Layout from "./page/Layout";
+import Login from "./page/Login";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <TopHeader />
-        <div style={{display: "flex", flexDirection:'row', width:'100%'}}>
-        <Header />
         <Routes>
-          <Route path="/pageA" element={<PageA />} />
-          <Route path="/pageB" element={<PageB />} />
-          <Route path="/pageC" element={<PageC />} />
+          <Route path="/" element={<Layout />}>
+            <Route path="/pageA" element={<PageA />} />
+            <Route path="/pageB" element={<PageB />} />
+            <Route path="/pageC" element={<PageC />} />
+          </Route>
+          <Route path="/login" element={<Login/>}/>
         </Routes>
-        </div>
       </BrowserRouter>
     </div>
   );

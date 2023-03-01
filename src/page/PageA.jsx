@@ -8,9 +8,9 @@ const BackTxt = styled.div`
     font-weight: 600;
     color: #4e6dde;
     margin-left: 500px;
-    align-items: center;
+    margin-top: 300px;
+    
 `
-
 
 function PageA() {
 
